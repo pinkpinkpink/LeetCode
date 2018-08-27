@@ -18,7 +18,7 @@ public class RomannumberTransInteger {
         String NoADD;
         private String left;
         private String right;
-        
+
 
     if(){
 
