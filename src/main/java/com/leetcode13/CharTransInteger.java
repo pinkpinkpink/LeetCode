@@ -5,8 +5,8 @@ package com.leetcode13;/*
  * @Modified By
  * */
 
-public class RomannumberTransInteger {
-    public int romanToInt(char r){
+public class CharTransInteger {
+    public int CharToInt(char r){
         switch (r){
             case 'I':
                 return 1;
@@ -24,9 +24,6 @@ public class RomannumberTransInteger {
                 return 1000;
         }
         return 0;
-
-
-
     }
 
 }
