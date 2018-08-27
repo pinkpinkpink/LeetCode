@@ -7,7 +7,6 @@ package com.leetcode13;/*
 
 public class RomannumberTransInteger {
     public int romanToInt(char r){
-
         switch (r){
             case 'I':
                 return 1;
