@@ -1,4 +1,4 @@
-package com.Leetcode9;
+package com.leetcode9;
 /*
  * @Author
  * @Date：Created in ${time} ${date}
