@@ -11,10 +11,13 @@ public class RomanNumberToInteger {
         int result = 0;
         for (int i = 0; i < s.length() - 1; i++) {
             char c1 = s.charAt(i);
+            char c2 = s.charAt(i+1);
+            int now1 = CharTransInteger(c1);
+            int now2 = CharTransInteger(c2);
 
             result = result;
 
         }
     }
-    return result;
+    return 0;
 }

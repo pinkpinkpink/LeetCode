@@ -6,7 +6,7 @@ package com.leetcode13;/*
  * */
 
 public class CharTransInteger {
-    public int CharToInt(char r){
+    public int CharTransInteger(char r){
         switch (r){
             case 'I':
                 return 1;
