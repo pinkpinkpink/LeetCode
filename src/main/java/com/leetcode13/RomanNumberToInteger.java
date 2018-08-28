@@ -1,23 +1,36 @@
-package com.leetcode13;/*
+package com.leetcode13;
+/*
  * @Author
  * @Date：Created in ${time} ${date}
  * @description
  * @Modified By
  * */
 
-public class RomanNumberToInteger {
-    public String RomanNumberToInteger(String s) {
-        s = s + 'I';
-        int result = 0;
-        for (int i = 0; i < s.length() - 1; i++) {
-            char c1 = s.charAt(i);
-            char c2 = s.charAt(i+1);
-            int now1 = CharTransInteger(c1);
-            int now2 = CharTransInteger(c2);
+import java.util.HashMap;
 
-            result = result;
+public class RomanNumberToInteger {
+    public int RomanNumberToInteger(String s) {
+        HashMap<Character,Integer> map = new HashMap<Character, Integer>();
+        map.put('I',1);
+        map.put('V',5);
+        map.put('X',10);
+        map.put('L',50);
+        map.put('C',100);
+        map.put('D',500);
+        map.put('M',1000);
+
+        int result = map.get(s.charAt(0));
+        for(int i = 1; i < s.length(); i++){
+            if(map.get(s.charAt(i)) > map.get(s.charAt(i-1))){
+                result = result + map.get(s.charAt(i)) - 2*map.get(s.charAt(i-1));
+
+            }else{
+                result = result + map.get(s.charAt(i));
+            }
 
         }
+            return  result;
+        }
+
     }
-    return 0;
-}
+
